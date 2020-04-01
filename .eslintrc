@@ -1,0 +1,27 @@
+{
+  "extends": ["standard", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "max-len": [ 1,120, 2, { "ignoreComments": true } ],
+    "no-console": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": { "delimiter": "comma", "requireLast": true },
+        "singleline": { "delimiter": "comma", "requireLast": false }
+      },
+    ],
+    "no-unused-vars": ["off"],
+    "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "all", "argsIgnorePattern": "_" }],
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/camelcase": 1,
+    "@typescript-eslint/ban-ts-ignore": 1
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  }
+}

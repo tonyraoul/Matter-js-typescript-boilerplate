@@ -1,0 +1,17 @@
+{
+  "name": "ballistix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch index.html"
+  },
+  "dependencies": {
+    "matter-js": "^0.14.2"
+  },
+  "devDependencies": {
+    "@types/matter-js": "^0.14.2",
+    "typescript": "^3.8.3",
+    "ts-loader": "^6.2.2"
+  }
+}
